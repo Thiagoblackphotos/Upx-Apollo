@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #F1F5F9;
+    color: #0F172A;
+    padding: 40px 60px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    min-height: auto !important;
+}
+
+header h1 {
+    font-weight: 500;
+    font-size: 56px;
+    margin-bottom: 56px;
+}
+
+body>p {
+    text-align: center;
+    font-size: 22px;
+    max-width: 500px;
+    margin: 0 auto 50px;
+    color: #42526e;
+    line-height: 1.5;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 30px;
+    align-items: start;
+    border: 2px solid rgba(255, 255, 255, .2);
+
+}
+
+#main-form {
+    background: white;
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+#main-form-strong {
+    font-size: 24px;
+}
+
+#main-form>p:nth-child(2) {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: #667085;
+}
+
+.input-box {
+    margin-bottom: 20px;
+}
+
+.input-box p,
+.select label,
+.time-period label {
+    margin-bottom: 6px;
+    font-weight: 600;
+    display: block;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #CBD5E1;
+    background: #FFFFFF;
+    font-size: 16px;
+    outline: none;
+    transition: 0.2s;
+}
+
+input:focus,
+select:focus {
+    border-color: #10B981;
+    box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.15);
+}
+
+.input-row {
+    display: flex;
+    gap: 20px;
+}
+
+.input-row .input-box {
+    flex: 1;
+}
+
+.select {
+    margin-bottom: 30px;
+}
+
+.time-period {
+    margin-bottom: 30px;
+}
+
+.time-period input {
+    margin-top: 10px;
+    margin-right: 10px;
+    width: calc(50% - 8px);
+}
+
+.enviar {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 12px;
+    background: #10B981;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.enviar:hover {
+    background: #059669;
+}
+
+table {
+    width: 100%;
+    margin-top: 40px;
+    border-collapse: collapse;
+}
+
+table th {
+    text-align: left;
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+
+td {
+    padding: 10px;
+}
+
+td button {
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #d9dde3;
+    background: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+td button:hover {
+    border-color: #10B981;
+    color: #10B981;
+    background: #ECFDF5;
+}
+
+.info {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 25px;
+}
+
+.info>p:first-child {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.conditions-type {
+    margin-top: 30px;
+}
+
+.conditions-type p {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.img img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+.explicacao {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.explicacao h3 {
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+.explicacao p {
+    line-height: 1.6;
+    color: #4b5563;
+}
+
+.footer {
+    width: 100%;
+    padding: 30px 20px;
+    margin-top: 80px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.footer p {
+    color: #0F172A;
+    font-size: 15px;
+    line-height: 1.8;
+    letter-spacing: 0.3px;
+}
+
+@media (max-width: 1000px) {
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 42px;
+    }
+
+    body {
+        padding: 20px;
+    }
+
+    .input-row {
+        flex-direction: column;
+    }
+
+    .time-period input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+.erro {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+}

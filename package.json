@@ -1,0 +1,19 @@
+{
+  "name": "upx-apollo",
+  "version": "1.0.0",
+  "description": "Projeto Apollo",
+  "main": "script.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "live-server": "^1.2.0"
+  },
+  "scripts": {
+    "start": "live-server .",
+    "dev": "live-server .",
+    "build": "echo Build concluído",
+    "deploy": "gh-pages -d ."
+  }
+}

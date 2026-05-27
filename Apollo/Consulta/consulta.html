@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apollo Project</title>
+    <link rel="stylesheet" href="styleConsulta.css">
+</head>
+
+<body>
+    <header style="justify-content: center; align-items: center; min-height: 100vh;">
+        <h1>Consulte seu Endereço</h1>
+    </header>
+    <p>Informe a localização que deseja analisar e descubra o potencial de energia renovável disponível.</p>
+    <main class="container">
+        <form id="main-form" action="../Resultado/resultado.html">
+            <p><strong>Informações de localização</strong></p>
+            <p>Preencha os dados do endereço para análise</p>
+
+            <div class="input-row">
+                <div class="input-box">
+                    <p>Endereço*</p>
+                    <input placeholder="Rua Oscar Freire" type="text" required>
+                </div>
+
+                <div class="input-box">
+                    <p>Cidade*</p>
+                    <input id="cidade" placeholder="São-Paulo" type="text" required>
+                </div>
+            </div>
+            <div class="input-box">
+                <p>Estado*</p>
+                <input id="estado" placeholder="SP" type="text" required>
+            </div>
+
+            <div class="input-box">
+                <p>CEP*</p>
+                <input id="cep" placeholder="00000-000" type="text" required>
+
+                <small class="erro" id="erroCep"></small>
+            </div>
+
+            <div class="select">
+                <label>Dataset</label>
+
+                <select id="dataset">
+                    <option value="">Selecione uma opção</option>
+                    <option>Energia Solar</option>
+                    <option>Energia Eólica</option>
+                </select>
+
+                <small class="erro" id="erroDataset"></small>
+            </div>
+
+            <div class="time-period">
+
+                <label>Período início*</label>
+                <input id="dataInicio" type="date">
+
+                <label>Período Final</label>
+                <input id="dataFim" type="date">
+
+                <small class="erro" id="erroPeriodo"></small>
+            </div>
+
+            <button type="submit" class="enviar">Iniciar análise</button>
+        </form>
+
+        <table>
+            <thead>
+                <th colspan="2">Localizações sujeridas</th>
+            </thead>
+            <tbody class="options">
+                <tr>
+                    <td><button class="cidade-btn">São Paulo - SP</button></td>
+                    <td><button class="cidade-btn">Recife - PE</button></td>
+                </tr>
+                <tr>
+                    <td><button class="cidade-btn">Fortaleza - CE</button></td>
+                    <td><button class="cidade-btn">Curitiba - PR</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <div class="right-column">
+        <section class="info">
+            <p>O que Analisamos?</p>
+            <p style="color: #FBBF24;"><strong>Nossa análise considera diversos fatores ambientais</strong></p>
+            <div class="conditions-type">
+                <p>Incidência Solar</p>
+                <p style="color: #FBBF24;"><strong>Medimos a radiação solar média da região ao longo do ano.</strong></p>
+                <p>Condições do vento</p>
+                <p style="color: #FBBF24"><strong>Avaliamos velocidade e frequência dos ventos locais.</strong></p>
+                <p>Clima Regional</p>
+                <p style="color: #FBBF24"><strong>Analisamos padrões climáticos e sazonalidade.</strong></p>
+            </div>
+        </section>
+
+        <section class="explicacao">
+            <p>
+            <h3>Dados Baseados em Satélites</h3>
+            </p>
+            <p>Utilizamos informações de satélites meteorológicos e base de dados internacionais do programa Copernicus
+                Energy Hub atraves da API openEO</p>
+            <p>para garantir a precisão nas análises</p>
+        </section>
+    </div>
+
+    <script src="consulta.js"></script>
+</body>
+<footer class="footer">
+    <p>Centro Universitário Facens • Análise e Desenvolvimento de Sistemas - Usina de Projetos • III Semestre / 2026</p>
+    <p>Desenvolvido pela equipe do projeto.</p>
+    <p><strong>Contato</strong></p>
+    <p>facens.apolloproject@gmail.com</p>
+</footer>
+
+</html>
