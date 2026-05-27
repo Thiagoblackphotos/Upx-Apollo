@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #F1F5F9;
+    color: #0f172a;
+    padding: 40px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    gap: 20px;
+}
+
+.left-top h1 {
+    font-size: 52px;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+.voltar {
+    color: #ff8800;
+    text-decoration: none;
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.localizacao {
+    color: #475569;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.right-top {
+    display: flex;
+    gap: 15px;
+}
+
+.right-top button {
+    padding: 14px 24px;
+    border-radius: 14px;
+    border: 1px solid #CBD5E1;
+    background: white;
+    cursor: pointer;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.2s;
+}
+
+.right-top button:hover {
+    border-color: #10B981;
+    transform: translateY(-2px);
+}
+
+.resultado-geral {
+    background: #ECFDF5;
+    border: 1px solid #A7F3D0;
+    border-radius: 22px;
+    padding: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin-bottom: 35px;
+}
+
+.resultado-left {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.icone-check {
+    width: 80px;
+    height: 80px;
+    background: #10B981;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+}
+
+.resultado-left h2 {
+    color: #047857;
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.resultado-left p {
+    color: #16884f;
+    font-size: 22px;
+}
+
+.resultado-right {
+    text-align: center;
+}
+
+.resultado-right h2 {
+    font-size: 82px;
+    color: #0ab14b;
+}
+
+.resultado-right p {
+    color: #148548;
+    font-size: 22px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.card {
+    background: white;
+    border-radius: 24px;
+    padding: 30px;
+    min-height: 300px;
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.card-top p {
+    font-size: 26px;
+}
+
+.card-top i {
+    font-size: 28px;
+}
+
+
+.solar {
+    border: 2px solid #FBBF24;
+}
+
+.solar h2 {
+    color: #D97706;
+}
+
+
+.vento {
+    border: 2px solid #c8d8ff;
+}
+
+.vento h2 {
+    color: #2563eb;
+}
+
+
+.card h2 {
+    font-size: 58px;
+    margin-bottom: 15px;
+}
+
+.card > p {
+    font-size: 22px;
+    color: #475569;
+    margin-bottom: 35px;
+}
+
+.card small {
+    color: #64748b;
+    font-size: 18px;
+}
+
+.barra {
+    width: 100%;
+    height: 12px;
+    background: #d4d4d8;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.progresso {
+    height: 100%;
+    background: #0F172A;
+    border-radius: 30px;
+}
+
+.solar-progress {
+    width: 88%;
+}
+
+.vento-progress {
+    width: 55%;
+}
+
+.aviso {
+    background: white;
+    border: 1px solid #dbe2ea;
+    border-radius: 22px;
+    padding: 28px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.aviso i {
+    font-size: 26px;
+    color: #64748b;
+}
+
+.aviso p {
+    color: #475569;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.footer {
+    width: 100%;
+    padding: 30px 20px;
+    margin-top: 80px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.footer p {
+    color: #0F172A;
+    font-size: 15px;
+    line-height: 1.8;
+    letter-spacing: 0.3px;
+}
+
+@media(max-width: 1100px) {
+
+    .top-bar {
+        flex-direction: column;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .resultado-geral {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .resultado-left {
+        flex-direction: column;
+    }
+
+    .left-top h1 {
+        font-size: 40px;
+    }
+
+    .resultado-left h2 {
+        font-size: 32px;
+    }
+
+    .resultado-right h2 {
+        font-size: 64px;
+    }
+
+    .card h2 {
+        font-size: 42px;
+    }
+
+}
