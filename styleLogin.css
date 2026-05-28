@@ -126,3 +126,13 @@ body {
 
     margin-top: 5px;
 }
+
+.logo {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+}
+
+.logo img {
+    width: 350px; 
+}

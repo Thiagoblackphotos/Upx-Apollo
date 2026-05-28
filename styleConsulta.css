@@ -259,3 +259,9 @@ td button:hover {
     margin-top: 5px;
     display: block;
 }
+
+.logo {
+    display: flex;
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center; 
+}
