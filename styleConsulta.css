@@ -163,16 +163,74 @@ td button:hover {
 }
 
 .info {
-    background: #FFFFFF;
+    background: #F8FAFC;
     border: 1px solid #E2E8F0;
     border-radius: 20px;
     padding: 30px;
-    margin-bottom: 25px;
 }
 
-.info>p:first-child {
-    font-size: 28px;
-    margin-bottom: 15px;
+.info h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #0F172A;
+}
+
+.subtitle {
+    color: #64748B;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.analysis-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 22px;
+}
+
+.analysis-item:last-child {
+    margin-bottom: 0;
+}
+
+.icon {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    font-size: 20px;
+
+    flex-shrink: 0;
+}
+
+.solar {
+    background: rgba(251, 191, 36, 0.15);
+}
+
+.vento {
+    background: rgba(59, 130, 246, 0.15);
+}
+
+.clima {
+    background: rgba(16, 185, 129, 0.15);
+}
+
+.analysis-item h4 {
+    color: #0F172A;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.analysis-item p {
+    color: #64748B;
+    line-height: 1.5;
+    font-size: 14px;
 }
 
 .conditions-type {
